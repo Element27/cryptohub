@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     backgroundImage: {
       'pattern': "url('/public/assets/img/image 46.png')",
-      'footer-texture': "url('/img/footer-texture.png')",
+      'frame': "url('/public/assets/img/Frame.png')",
     }
   },
   plugins: [],

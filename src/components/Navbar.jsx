@@ -19,7 +19,7 @@ export default function Navbar() {
           <button className='font-normal text-sm text-white bg-[#4C3AEF] rounded-md py-2 px-6'>Join Our Community</button>
         </nav>}
       </div>
-      <IconMenu className="md:hidden z-10" onClick={() => setShowNav(!showNav)} />
+      <IconMenu className="md:hidden z-10 text-[#4c3aef] pointer" onClick={() => setShowNav(!showNav)} />
 
       <div className='hidden md:flex'>
         <nav className='flex  items-center gap-x-4 font-bold text-sm'>
