@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import GateWayCard from '../components/homeComp/GateWayCard'
+import CoursesComp from '../components/homeComp/CoursesComp'
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <div className='min-h-[90vh] bg-[#0F0854] w-full flex flex-col lg:flex-row items-center relative'>
         <div className='px-4 mx-auto md:w-[50%] lg:w-full'>
@@ -30,7 +31,7 @@ export default function Home() {
       </div>
 
 
-      <div className='flex items-center justify-between w-full md:w-[60%] mx-auto px-6 py-8 text-xs'>
+      <div className='flex items-center justify-between md:w-[60%] mx-auto px-6 py-8 text-xs'>
         <div className='flex '>
           <img src='/assets/img/Group 40.png' alt='' className='w-full' />
           <h4 className='font-bold'>Home</h4>
@@ -39,7 +40,7 @@ export default function Home() {
         <h4>Cryptocurrency</h4>
       </div>
 
-      <div className='w-[350px] mx-12'>
+      <div className='w-[90%] md:w-[350px] mx-6'>
         <h4 className='text-xs font-bold'>Popular</h4>
         <h2 className='text-4xl font-extrabold my-4'>The Gateway To Blockchain Economy</h2>
         <p className='text-lg font-medium'>In an industry that is leading the next technological revolution, Cryptohub is your number one guide to tapping into the next big thing.</p>
@@ -52,16 +53,55 @@ export default function Home() {
       </div>
 
 
-      <div className='overflow-scroll px-6 w-screen'>
-        <div className='flex w-screen justify-between gap-x-6'>
+      <div className=' mx-6 '>
+        <div className='flex justify-between lg:justify-normal gap-x-6 overflow-x-scroll'>
 
           <GateWayCard />
           <GateWayCard />
           <GateWayCard />
         </div>
         <button className="font-normal text-sm text-white bg-[#8275F4] rounded-md py-2 px-10 my-6"> See All</button>
+      </div>
+
+      <div className='bg-[#FFF9D8] p-12 w-screen flex items-center md:items-start justify-between flex-col lg:flex-row'>
+
+        <div className='w-full md:w-[45%] lg:w-[35%] mb-4'>
+          <h4 className='font-bold md:font-extrabold text-3xl md:text-5xl'>Learn from our free courses</h4>
+          <p className='font-semibold md:font-bold text-base lg:text-xl mt-4'> In an industry that is leading the next technological revolution, Cryptohub is your number one guide to tapping into the next big thing.</p>
+        </div>
+
+        <div className='w-full lg:w-[60%]'>
+          <div className=' overflow-scroll'>
+            <div className='flex justify-between lg:justify-normal gap-x-6'>
+              <CoursesComp />
+              <CoursesComp />
+              <CoursesComp />
+            </div>
+          </div>
+          <p className='text-sm md:text-base font-medium text-[#4C3AEF] mt-8 text-center mx-auto'>Create my own account</p>
+        </div>
+      </div>
 
 
+      <div className='px-4 py-8'>
+        <h3 className='text-4xl font-extrabold'>Crypto Guides</h3>
+
+        <div className=''>
+          <h5 className='text-xs my-5 font-semibold'>• Select Topic</h5>
+          <div className='flex overflow-x-scroll gap-x-4 py-3 md:mx-auto lg:w-fit'>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Trading</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Menu</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Cryptocurrency</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Blockchain & Business</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Bitcoin</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Altcoin</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Defi</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Ethereum</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>NFT</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Technology</p>
+            <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Report</p>
+          </div>
+        </div>
       </div>
     </div>
   )
