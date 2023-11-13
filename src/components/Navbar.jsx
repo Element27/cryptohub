@@ -16,6 +16,8 @@ export default function Navbar() {
           <Link to='/about'>About Us</Link>
           <Link to='/services'>Our Services</Link>
           <Link to='/contact'>Contact Us</Link>
+          <Link to='/article'>Article</Link>
+          <Link to='/courses'>Courses</Link>
           <button className='font-normal text-sm text-white bg-[#4C3AEF] rounded-md py-2 px-6'>Join Our Community</button>
         </nav>}
       </div>
@@ -27,6 +29,8 @@ export default function Navbar() {
           <Link to='/about'>About Us</Link>
           <Link to='/services'>Our Services</Link>
           <Link to='/contact'>Contact Us</Link>
+          <Link to='/article'>Article</Link>
+          <Link to='/courses'>Courses</Link>
           <button className='font-normal text-sm text-white bg-[#4C3AEF] rounded-md py-2 px-6'>Join Our Community</button>
         </nav>
       </div>

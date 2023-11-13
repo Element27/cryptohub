@@ -39,12 +39,6 @@ export default function Service() {
         </div>
       </div>
 
-      <div className='bg-[#f4f4f4] px-6 py-12'>
-        <h3 className='text-4xl font-extrabold'>      Introducing Cryptohub School      </h3>
-        <p className='text-sm font-medium my-6'>In an industry that is leading the next technological revolution, Cryptohub is your number one guide to tapping into the next big thing.</p>
-        <button className='font-normal text-sm text-white bg-[#4C3AEF] rounded-md py-2 px-6'>Join Waiting List</button>
-        <img src='/assets/img/Group 33123.png' alt='' className='mx-auto my-6' />
-      </div>
       <Footer />
     </div>
   )

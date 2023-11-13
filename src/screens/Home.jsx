@@ -2,6 +2,10 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import GateWayCard from '../components/homeComp/GateWayCard'
 import CoursesComp from '../components/homeComp/CoursesComp'
+import CryptoGuideComp from '../components/homeComp/CryptoGuideComp'
+import Youtube from '../components/homeComp/Youtube'
+import OurServicesComp from '../components/servicesComp/OurServicesComp'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -71,12 +75,12 @@ export default function Home() {
         </div>
 
         <div className='w-full lg:w-[60%]'>
-          <div className=' overflow-scroll'>
-            <div className='flex justify-between lg:justify-normal gap-x-6'>
-              <CoursesComp />
-              <CoursesComp />
-              <CoursesComp />
-            </div>
+          {/* <div className=' '> */}
+          <div className='overflow-scroll flex gap-x-4 lg:justify-center py-4 '>
+            <CoursesComp />
+            <CoursesComp />
+            <CoursesComp />
+            {/* </div> */}
           </div>
           <p className='text-sm md:text-base font-medium text-[#4C3AEF] mt-8 text-center mx-auto'>Create my own account</p>
         </div>
@@ -84,11 +88,11 @@ export default function Home() {
 
 
       <div className='px-4 py-8'>
-        <h3 className='text-4xl font-extrabold'>Crypto Guides</h3>
 
-        <div className=''>
+        <div className='md:mx-auto lg:w-fit'>
+          <h3 className='text-4xl font-extrabold'>Crypto Guides</h3>
           <h5 className='text-xs my-5 font-semibold'>• Select Topic</h5>
-          <div className='flex overflow-x-scroll gap-x-4 py-3 md:mx-auto lg:w-fit'>
+          <div className='flex overflow-x-scroll gap-x-4 py-3 '>
             <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Trading</p>
             <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Menu</p>
             <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Cryptocurrency</p>
@@ -101,8 +105,68 @@ export default function Home() {
             <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Technology</p>
             <p className='text-xs text-[#4c3aef] font-normal py-2 px-4 rounded-sm bg-[#4C3AEF1A] min-w-fit '>Report</p>
           </div>
+
+        </div>
+
+        <div className='w-screen my-5'>
+          <div className=' overflow-scroll flex gap-x-4 lg:justify-center py-4'>
+            <CryptoGuideComp />
+            <CryptoGuideComp />
+            <CryptoGuideComp />
+            <CryptoGuideComp />
+          </div>
+
+          <p className='text-sm md:text-base font-medium text-[#4C3AEF] mt-6 text-center mx-auto'>View More</p>
         </div>
       </div>
+
+      <div>
+
+        <div className='w-screen my-5'>
+          <h3 className='text-4xl font-extrabold mx-4 mb-4'>Crypto Guides from Youtube</h3>
+
+          <div className=' overflow-scroll flex gap-x-4 lg:justify-center py-4'>
+            <Youtube />
+            <Youtube />
+            <Youtube />
+            <Youtube />
+          </div>
+
+          <p className='text-sm md:text-base font-medium text-[#4C3AEF] mt-6 text-center mx-auto'>View More</p>
+        </div>
+      </div>
+
+
+      <div className='px-4 md:px-8 lg:px-12 flex gap-x-4 justify-between '>
+
+        <div className='w-full lg:w-[30%]'><OurServicesComp
+          icon={'/assets/img/image 47.png'}
+          header="Bitcoin And Blockchain Technology Education"
+          desc={["We've put together the best knowledge to get you started in the blockchain space.",
+            "We educate both new and existing members of the cryptocurrency community.",
+            "We offer basic and advanced knowledge on bitcoin and blockchain technology. We equip people with the right knowledge for creating wealth in the cryptocurrency industry."]}
+        /></div>
+
+        <div className='w-full lg:w-[30%]'><OurServicesComp
+          icon={'/assets/img/image 49.png'}
+          header="Cryptocurrency Trading & Investment"
+          desc={["We complete guide to mastering the art of cryptocurrency trading.",
+            "We trade, invest, and manage clients’ portfolios through our sister company, Crypto Life Capital.",
+            "We guide our clients on cryptocurrency trading and investment. "]}
+        /></div>
+        <div className='w-full lg:w-[30%]'><OurServicesComp
+          icon={'/assets/img/image 51.png'}
+          header="Research, Analysis & Signals"
+          desc={["Based off our research and analytics, we give you signals to make better trades.",
+            "We understand that the cryptocurrency market is dynamic, so we carry out regular studies and analysis on the market.",
+            "We keep members of our community updated with information on market sentiments and possible price movements.",
+          ]}
+        />
+        </div></div>
+
+
+      <Footer />
+
     </div>
   )
 }
