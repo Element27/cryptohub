@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import DropDown from '../components/ArticleComp/DropDown'
 import { ThumbsDown, ThumbsUp } from '../components/Icons'
+import GateWayCard from '../components/homeComp/GateWayCard'
 
 export default function Article() {
 
@@ -73,9 +74,25 @@ export default function Article() {
         </div>
       </div>
 
-      <div className='px-4'>
+      <div className='mx-10 py-8 w-fit lg:mx-auto'>
         <h4 className='text-3xl lg:text-4xl font-bold'>Similar Articles</h4>
+        <div className='  my-6'>
+          <div className='flex justify-between lg:justify-normal gap-x-6 overflow-x-scroll'>
 
+            <GateWayCard />
+            <GateWayCard />
+            <GateWayCard />
+          </div>
+        </div>
+
+        <div className='bg-[#4C3AEF] rounded-md w-full md:w-[70%] lg:w-[50%] p-6 flex flex-col gap-y-4 mx-auto my-20' >
+          <h3 className='text-4xl font-extrabold text-white text-center'>You’ve got qestions?</h3>
+          <p className='text-sm text-white text-center'>Be the first to know when we release new content. Sign up to get early access to additional Cryptohub lessons.</p>
+          <button className='text-sm text-[#4C3AEF] bg-white rounded-md py-2 px-6 font-semibold'> Join our commnuity</button>
+        </div>
+
+
+        <p className='text-sm font-medium text-center'> Copyright 2021 © All rights Reserved.<span className='text-[#4C3AEF]'> Cryptohub.club</span></p>
       </div>
     </div>
   )
